@@ -4,12 +4,12 @@
   <parent>
     <groupId>org.nuxeo</groupId>
     <artifactId>nuxeo-ecm</artifactId>
-    <version>5.2-SNAPSHOT</version>
+    <version>5.2.m2</version>
   </parent>
 
   <groupId>org.nuxeo.theme</groupId>
   <artifactId>nuxeo-theme-parent</artifactId>
-  <version>5.2-SNAPSHOT</version>
+  <version>5.2.m2</version>
   <name>Nuxeo Theme Parent</name>
   <packaging>pom</packaging>
   <description>
@@ -18,8 +18,8 @@
   </description>
 
   <properties>
-    <nuxeo.common.version>1.5-SNAPSHOT</nuxeo.common.version>
-    <nuxeo.runtime.version>1.5-SNAPSHOT</nuxeo.runtime.version>
+    <nuxeo.common.version>1.5.m2</nuxeo.common.version>
+    <nuxeo.runtime.version>1.5.m2</nuxeo.runtime.version>
     <nuxeo.theme.version>${pom.version}</nuxeo.theme.version>
   </properties>
 
