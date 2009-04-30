@@ -30,7 +30,6 @@ import org.nuxeo.runtime.model.Extension;
 import org.nuxeo.runtime.model.RuntimeContext;
 import org.nuxeo.theme.ApplicationType;
 import org.nuxeo.theme.CachingDef;
-import org.nuxeo.theme.Manager;
 import org.nuxeo.theme.NegotiationDef;
 import org.nuxeo.theme.Registrable;
 import org.nuxeo.theme.RegistryType;
@@ -118,7 +117,7 @@ public class ThemeService extends DefaultComponent implements FrameworkListener 
                 || xp.equals("formats") || xp.equals("format-filters")
                 || xp.equals("standalone-filters") || xp.equals("resources")
                 || xp.equals("negotiations") || xp.equals("shortcuts")
-                || xp.equals("vocabularies")) {
+                || xp.equals("vocabularies") || xp.equals("adapters")) {
             registerTypeExtension(extension);
         } else if (xp.equals("applications")) {
             registerApplicationExtension(extension);
@@ -517,7 +516,7 @@ public class ThemeService extends DefaultComponent implements FrameworkListener 
     private void registerModelExtension(Extension extension) {
         Object[] contribs = extension.getContributions();
         TypeRegistry typeRegistry = (TypeRegistry) getRegistry("types");
-        ThemeManager themeManager = Manager.getThemeManager();
+        ThemeManager themeManager = (ThemeManager) getRegistry("themes");
         for (Object contrib : contribs) {
             ModelType modelType = (ModelType) contrib;
             final String modelTypeName = modelType.getTypeName();
@@ -544,7 +543,7 @@ public class ThemeService extends DefaultComponent implements FrameworkListener 
     private void unregisterModelExtension(Extension extension) {
         Object[] contribs = extension.getContributions();
         TypeRegistry typeRegistry = (TypeRegistry) getRegistry("types");
-        ThemeManager themeManager = Manager.getThemeManager();
+        ThemeManager themeManager = (ThemeManager) getRegistry("themes");
         if (typeRegistry != null) {
             for (Object contrib : contribs) {
                 ModelType modelType = (ModelType) contrib;

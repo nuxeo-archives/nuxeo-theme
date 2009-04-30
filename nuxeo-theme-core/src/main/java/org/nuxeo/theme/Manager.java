@@ -22,6 +22,7 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.nuxeo.runtime.api.Framework;
+import org.nuxeo.theme.adapters.AdapterManager;
 import org.nuxeo.theme.events.EventManager;
 import org.nuxeo.theme.models.InfoPool;
 import org.nuxeo.theme.perspectives.PerspectiveManager;
@@ -92,6 +93,10 @@ public final class Manager {
 
     public static VocabularyManager getVocabularyManager() {
         return (VocabularyManager) getRegistry("vocabularies");
+    }
+
+    public static AdapterManager getAdapterManager() {
+        return (AdapterManager) getRegistry("adapters");
     }
 
     @SuppressWarnings( { "ResultOfObjectAllocationIgnored" })
