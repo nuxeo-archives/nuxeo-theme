@@ -22,8 +22,6 @@ import java.util.Map;
 import java.util.Properties;
 
 import org.nuxeo.runtime.api.Framework;
-import org.nuxeo.theme.events.EventManager;
-import org.nuxeo.theme.models.InfoPool;
 import org.nuxeo.theme.perspectives.PerspectiveManager;
 import org.nuxeo.theme.protocol.nxtheme.Handler;
 import org.nuxeo.theme.relations.RelationStorage;
@@ -72,10 +70,6 @@ public final class Manager {
 
     public static TypeRegistry getTypeRegistry() {
         return (TypeRegistry) getRegistry("types");
-    }
-
-    public static EventManager getEventManager() {
-        return (EventManager) getRegistry("events");
     }
 
     public static ResourceManager getResourceManager() {

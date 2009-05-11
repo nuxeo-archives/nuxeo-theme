@@ -25,10 +25,6 @@
       <class>org.nuxeo.theme.themes.ThemeManager</class>
     </registry>
 
-    <registry name="events">
-      <class>org.nuxeo.theme.events.EventManager</class>
-    </registry>
-
     <registry name="resources">
       <class>org.nuxeo.theme.resources.ResourceManager</class>
     </registry>
