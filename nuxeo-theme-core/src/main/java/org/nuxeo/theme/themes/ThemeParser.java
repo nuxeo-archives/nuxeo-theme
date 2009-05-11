@@ -522,8 +522,12 @@ public class ThemeParser {
         return nodes;
     }
 
+<<<<<<< /home/anahide/workspaces/nuxeo/nuxeo-theme/nuxeo-theme-core/src/main/java/org/nuxeo/theme/themes/ThemeParser.java
+    public static List<Node> getChildElementsByTagName(Node node, String tagName) {
+=======
     public static List<Node> getChildElementsByTagName(Node node,
             String tagName) {
+>>>>>>> /tmp/ThemeParser.java~other.n9uItC
         List<Node> nodes = new ArrayList<Node>();
         NodeList childNodes = node.getChildNodes();
         for (int i = 0; i < childNodes.getLength(); i++) {

@@ -341,10 +341,18 @@ public final class ThemeManager implements Registrable {
     }
 
     public PageElement getPageByPath(final String path) {
+        PageElement page = Manager.getAdapterManager().getPageByPath(path);
+        if (page != null) {
+            return page;
+        }
         return pages.get(path);
     }
 
     public ThemeElement getThemeByName(final String name) {
+        ThemeElement theme = Manager.getAdapterManager().getThemeByName(name);
+        if (theme != null) {
+            return theme;
+        }
         return themes.get(name);
     }
 
@@ -399,6 +407,12 @@ public final class ThemeManager implements Registrable {
     // Named objects
     public Identifiable getNamedObject(final String themeName,
             final String realm, final String name) {
+        Identifiable res = Manager.getAdapterManager().getNamedObject(
+                themeName, realm, name);
+        if (res != null) {
+            return res;
+        }
+
         final Map<String, Integer> objectsInTheme = namedObjectsByTheme.get(themeName);
         if (objectsInTheme == null) {
             return null;
@@ -412,11 +426,22 @@ public final class ThemeManager implements Registrable {
     }
 
     public String getThemeNameOfNamedObject(Identifiable object) {
+        String res = Manager.getAdapterManager().getThemeNameOfNamedObject(
+                object);
+        if (res != null) {
+            return res;
+        }
         return themeOfNamedObjects.get(object.getUid());
     }
 
     public void setNamedObject(final String themeName, final String realm,
             final Identifiable object) {
+        boolean set = Manager.getAdapterManager().setNamedObject(themeName,
+                realm, object);
+        if (set) {
+            return;
+        }
+
         if (!namedObjectsByTheme.containsKey(themeName)) {
             namedObjectsByTheme.put(themeName,
                     new LinkedHashMap<String, Integer>());
@@ -434,6 +459,12 @@ public final class ThemeManager implements Registrable {
 
     public List<Identifiable> getNamedObjects(final String themeName,
             final String realm) {
+        List<Identifiable> res = Manager.getAdapterManager().getNamedObjects(
+                themeName, realm);
+        if (res != null) {
+            return res;
+        }
+
         final List<Identifiable> objects = new ArrayList<Identifiable>();
         final Map<String, Integer> objectsInTheme = namedObjectsByTheme.get(themeName);
         final String prefix = String.format("%s/", realm);

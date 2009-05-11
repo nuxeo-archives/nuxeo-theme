@@ -238,4 +238,8 @@
     <object class="org.nuxeo.theme.vocabularies.VocabularyType"/>
   </extension-point>
 
+  <extension-point name="adapters">
+    <object class="org.nuxeo.theme.adapters.AdapterType"/>
+  </extension-point>
+
 </component>

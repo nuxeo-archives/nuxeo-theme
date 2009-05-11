@@ -45,6 +45,12 @@
       </class>
     </registry>
 
+    <registry name="adapters">
+      <class>
+        org.nuxeo.theme.adapters.AdapterManager
+      </class>
+    </registry>
+
   </extension>
 
   <extension target="org.nuxeo.theme.services.ThemeService"
