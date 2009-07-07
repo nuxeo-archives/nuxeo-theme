@@ -6,7 +6,7 @@
     Web-related features and resources are registered here.
     @author Jean-Marc Orliaguet (jmo@chalmers.se)
   </documentation>
-  
+   
   <require>org.nuxeo.theme.core</require>
     
   <extension target="org.nuxeo.theme.services.ThemeService"
@@ -22,7 +22,8 @@
 
     <!-- Prototype 1.6.0.3 -->
     <!-- when changing prototype version, please make
-      sure fix for NXP-2586, and for NXP-3600 are applied -->
+      sure fix for NXP-2586, and for NXP-3600 are applied
+-->
     <resource name="prototype.js">
       <path>nxthemes/html/scripts/prototype.js</path>
       <shrinkable>false</shrinkable>
@@ -30,7 +31,19 @@
 
     <!-- JQuery 1.2.3 -->
     <resource name="jquery.js">
-      <path>nxthemes/html/scripts/jquery.js</path>
+      <path>nxthemes/html/scripts/jquery-1.3.2.min.js</path>
+      <shrinkable>false</shrinkable>
+    </resource>
+    
+    <!-- JQuery Cookie -->
+    <resource name="jquery.cookie.js">
+      <path>nxthemes/html/scripts/jquery.cookie.js</path>
+      <shrinkable>false</shrinkable>
+    </resource>
+    
+    <!-- JQuery Splitter -->
+    <resource name="splitter.js">
+      <path>nxthemes/html/scripts/splitter.js</path>
       <shrinkable>false</shrinkable>
     </resource>
 
