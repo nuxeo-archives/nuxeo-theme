@@ -66,6 +66,7 @@
 				.unbind("mousemove", doSplitMouse)
 				.unbind("mouseup", endSplitMouse);
 			
+			var state = new String(bar.css(opts.origin));
 			$.cookie(opts.cookie, state, {expires: opts.cookieExpires || 365, 
 				path: '/' });
 		}
@@ -172,7 +173,7 @@
 			if ( !isNaN(ckpos) )
 				initPos = ckpos;
 			$(window).bind("unload", function(){
-				var state = String(bar.css(opts.origin));	// current location of splitbar
+				var state = new String(bar.css(opts.origin));	// current location of splitbar
 				$.cookie(opts.cookie, state, {expires: opts.cookieExpires || 365, 
 					path: '/' });
 			});
@@ -190,7 +191,7 @@
 				var wh = $(window).height();
 				splitter.css("height", Math.max(wh-top-splitter._hadjust, splitter._hmin)+"px");
 				if ( !$.browser.msie ) splitter.trigger("resize");
-			}).trigger("resize");
+			}).trigger("resize"); 
 		}
 		else if ( opts.resizeToWidth && !$.browser.msie )
 			$(window).bind("resize", function(){
