@@ -173,10 +173,15 @@ public final class ThemeManager implements Registrable {
     }
 
     public static String getDefaultTheme(final String applicationPath) {
+        return getDefaultTheme(applicationPath, null);
+    }
+
+    public static String getDefaultTheme(final String ... paths) {
         String defaultTheme = "";
+        ApplicationType application = null;
         final TypeRegistry typeRegistry = Manager.getTypeRegistry();
-        final ApplicationType application = (ApplicationType) typeRegistry.lookup(
-                TypeFamily.APPLICATION, applicationPath);
+        application = (ApplicationType) typeRegistry.lookup(
+                TypeFamily.APPLICATION, paths);
         if (application != null) {
             NegotiationDef negotiation = application.getNegotiation();
             if (negotiation != null) {
@@ -200,6 +205,24 @@ public final class ThemeManager implements Registrable {
             names.add(themeDef.getName());
         }
         return names;
+    }
+
+    public static ThemeDescriptor getThemeDescriptorByThemeName(
+            final String templateEngine, final String themeName) {
+        for (ThemeDescriptor themeDef : getThemeDescriptors()) {
+            // Skip customized themes
+            if (themeDef.isCustomized()) {
+                continue;
+            }
+            if (templateEngine != null
+                    && !themeDef.isCompatibleWith(templateEngine)) {
+                continue;
+            }
+            if (themeDef.getName().equals(themeName)) {
+                return themeDef;
+            }
+        }
+        return null;
     }
 
     public static Set<String> getThemeNames() {
@@ -857,6 +880,18 @@ public final class ThemeManager implements Registrable {
                     && !themeDef.isCustomized()) {
                 loadTheme(themeDef.getSrc());
             }
+        }
+    }
+
+    public void deletePage(String path) throws ThemeIOException, ThemeException {
+        PageElement page = getPageByPath(path);
+        if (page == null) {
+            throw new ThemeIOException("Failed to delete unkown page: " + path);
+        }
+        try {
+            destroyElement(page);
+        } catch (NodeException e) {
+            throw new ThemeIOException("Failed to delete page: " + path, e);
         }
     }
 

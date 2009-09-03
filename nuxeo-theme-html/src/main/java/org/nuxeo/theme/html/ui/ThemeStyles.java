@@ -33,9 +33,15 @@ public class ThemeStyles {
     private static final boolean INDENT = false;
 
     public static String render(Map<String, String> params, boolean cache,
-            boolean inline) {
+            boolean inline, boolean virtualHosting) {
         String themeName = params.get("themeName");
         String path = params.get("path");
+        
+        String cssPath = "/nuxeo/nxthemes-css";
+        if (virtualHosting) {
+            cssPath = path + "/nxthemes-css";
+        }
+
         if (inline) {
             final StringBuilder sb = new StringBuilder();
             sb.append("<style type=\"text/css\">");
@@ -55,11 +61,14 @@ public class ThemeStyles {
         }
         if (cache) {
             return String.format(
-                    "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"/nuxeo/nxthemes-css/?theme=%s&amp;path=%s\" />",
+                    "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\""
+                            + cssPath + "/?theme=%s&amp;path=%s\" />",
                     themeName, path);
         } else {
             return String.format(
-                    "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\"/nuxeo/nxthemes-css/?theme=%s&amp;path=%s&amp;timestamp=%s\" />",
+                    "<link rel=\"stylesheet\" type=\"text/css\" media=\"all\" href=\""
+                            + cssPath
+                            + "/?theme=%s&amp;path=%s&amp;timestamp=%s\" />",
                     themeName, path, new Date().getTime());
         }
     }

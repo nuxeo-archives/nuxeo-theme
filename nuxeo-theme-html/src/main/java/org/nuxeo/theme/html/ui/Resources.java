@@ -21,13 +21,19 @@ import org.nuxeo.theme.resources.ResourceManager;
 
 public class Resources {
 
-    public static String render(Map<String, String> params) {
+    public static String render(Map<String, String> params, boolean virtualHosting) {
         StringBuilder sb = new StringBuilder();
 
-        final String resourcePath = "/nuxeo/nxthemes-lib/";
+        String resourcePath = "/nuxeo/nxthemes-lib/";
         final String themeUrl = params.get("themeUrl");
         final String path = params.get("path");
         final String basepath = params.get("basepath");
+        String nxthemeBasePath = basepath;
+        
+        if (virtualHosting) {
+            resourcePath = path + "/nxthemes-lib/";
+            nxthemeBasePath = path;
+        }
 
         final ResourceManager resourceManager = Manager.getResourceManager();
 
@@ -66,7 +72,7 @@ public class Resources {
         // scripts
         sb.append(String.format(
                 "<script type=\"text/javascript\"><!--\n var nxthemesBasePath = \"%s\";\n //--></script>\n",
-                basepath));
+                nxthemeBasePath));
         if (hasScripts) {
             sb.append(String.format(
                     "<script type=\"text/javascript\" src=\"%s\"></script>",
