@@ -69,6 +69,33 @@
 			var state = new String(bar.css(opts.origin));
 			$.cookie(opts.cookie, state, {expires: opts.cookieExpires || 365, 
 				path: '/' });
+			
+			//document.title = newPos;
+			var splitter_bar = document.getElementById('splitter_bar');
+		     if(splitter_bar)
+		     {
+		    	 var count =0;
+		       var divs = splitter_bar.getElementsByTagName('div');
+		        for(var i=0; i<divs.length;i++)
+		        {
+		          if(divs[i].parentNode == splitter_bar)
+		          {
+		        	  if(count == 1)
+		        		  continue;
+		        	  var isIE6 = /msie|MSIE 6/.test(navigator.userAgent);
+		        	  if(isIE6 && (new Number(newPos) < 150))
+		        	  {
+		        		  divs[i].style.visibility = "hidden";
+		        		  count++;
+		        	  }
+		        	  else if(isIE6 && (new Number(newPos) > 150))
+		        	  {
+		        		  divs[i].style.visibility = "visible";
+		        		  count++;
+		        	  }
+		          }
+		        }
+		     }
 		}
 		function resplit(newPos) {
 			// Constrain new splitbar position to fit pane size limits
