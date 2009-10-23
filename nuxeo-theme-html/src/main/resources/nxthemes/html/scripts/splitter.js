@@ -57,6 +57,11 @@
 		function endSplitMouse(evt) {
 			bar.removeClass(opts.activeClass);
 			var newPos = A._posSplit+evt[opts.eventPos];
+			var isIE6 = /msie|MSIE 6/.test(navigator.userAgent);
+			if(new Number(newPos) < 150){
+				newPos = 1;
+			}
+			
 			if ( opts.outline ) {
 				zombie.remove(); zombie = null;
 				resplit(newPos);
@@ -70,7 +75,7 @@
 			$.cookie(opts.cookie, state, {expires: opts.cookieExpires || 365, 
 				path: '/' });
 			
-			//document.title = newPos;
+			
 			var splitter_bar = document.getElementById('splitter_bar');
 		     if(splitter_bar)
 		     {
@@ -96,7 +101,9 @@
 		          }
 		        }
 		     }
+			
 		}
+		
 		function resplit(newPos) {
 			// Constrain new splitbar position to fit pane size limits
 			newPos = Math.max(A._min, splitter._DA - B._max, 
