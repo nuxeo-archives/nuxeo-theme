@@ -2840,6 +2840,7 @@ var Selector = Class.create({
         // Add an explicit context to the selector if necessary.
         if (root !== document) {
           var oldId = root.id, id = $(root).identify();
+          id = id.replace(/([\.:])/g, "\\$1");
           e = "#" + id + " " + e;
         }
 
