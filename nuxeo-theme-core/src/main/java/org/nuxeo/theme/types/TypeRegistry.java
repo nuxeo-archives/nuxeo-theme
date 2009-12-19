@@ -37,13 +37,16 @@ public final class TypeRegistry implements Registrable {
         TypeFamily typeFamily = type.getTypeFamily();
         String key = computeKey(typeFamily, typeName);
         if (registry.containsKey(key)) {
-            log.warn("**** Overriding " + typeFamily + ": " + typeName);
+            log.warn("Overriding " + typeFamily + ": " + typeName);
         }
         registry.put(key, type);
         if (!typeNames.containsKey(typeFamily)) {
             typeNames.put(typeFamily, new ArrayList<String>());
         }
-        typeNames.get(typeFamily).add(typeName);
+        List<String> typeNamesByFamily = typeNames.get(typeFamily);
+        if (!typeNamesByFamily.contains(typeName)) {
+            typeNamesByFamily.add(typeName);
+        }
         log.debug("Registered " + typeFamily + ": " + typeName);
     }
 
@@ -61,14 +64,14 @@ public final class TypeRegistry implements Registrable {
         return registry.get(key);
     }
 
-    public Type lookup(final TypeFamily typeFamily, final String ... names) {
-        for(String name : names) {
-            if(name == null) {
+    public Type lookup(final TypeFamily typeFamily, final String... names) {
+        for (String name : names) {
+            if (name == null) {
                 continue;
             }
             String key = computeKey(typeFamily, name);
             Type type = registry.get(key);
-            if(type != null) {
+            if (type != null) {
                 return type;
             }
         }
