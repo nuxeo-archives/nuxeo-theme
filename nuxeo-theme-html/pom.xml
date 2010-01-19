@@ -24,6 +24,7 @@
     <dependency>
       <groupId>org.nuxeo.theme</groupId>
       <artifactId>nuxeo-theme-core</artifactId>
+      <version>${pom.parent.version}</version>
     </dependency>
     <dependency>
       <groupId>net.sf.json-lib</groupId>
