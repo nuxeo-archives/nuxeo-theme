@@ -11,6 +11,7 @@
 
   <artifactId>nuxeo-theme-html</artifactId>
   <name>Nuxeo Theme HTML</name>
+  <version>5.2-20081231-patch-NXP-3782</version>
   <description>
     Nuxeo Theme: HTML rendering for the Nuxeo ECM platform.
   </description>
