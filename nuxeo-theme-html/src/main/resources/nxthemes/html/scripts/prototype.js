@@ -1286,7 +1286,8 @@ Ajax.Request = Class.create(Ajax.Base, {
 
   success: function() {
     var status = this.getStatus();
-    return !status || (status >= 200 && status < 300);
+    //NXP-3600
+    return !status || (status >= 200 && status < 300) || status == 304 || status == 1223;
   },
 
   getStatus: function() {
@@ -1840,7 +1841,7 @@ Element.Methods = {
 
   addClassName: function(element, className) {
     if (!(element = $(element))) return;
-    if (!element.hasClassName(className))
+    if (!Element.hasClassName(element, className))
       element.className += (element.className ? ' ' : '') + className;
     return element;
   },
@@ -2840,6 +2841,8 @@ var Selector = Class.create({
         // Add an explicit context to the selector if necessary.
         if (root !== document) {
           var oldId = root.id, id = $(root).identify();
+          //NXP-3782
+          id = id.replace(/([\.:])/g, "\\$1");
           e = "#" + id + " " + e;
         }
 
