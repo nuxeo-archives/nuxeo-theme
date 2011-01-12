@@ -30,6 +30,7 @@ import org.nuxeo.runtime.model.Extension;
 import org.nuxeo.runtime.model.RuntimeContext;
 import org.nuxeo.theme.ApplicationType;
 import org.nuxeo.theme.CachingDef;
+import org.nuxeo.theme.Manager;
 import org.nuxeo.theme.NegotiationDef;
 import org.nuxeo.theme.Registrable;
 import org.nuxeo.theme.RegistryType;
@@ -86,6 +87,7 @@ public class ThemeService extends DefaultComponent implements FrameworkListener 
     public void activate(ComponentContext ctx) {
         this.context = ctx.getRuntimeContext();
         registries = new HashMap<String, Registrable>();
+        Manager.initializeProtocols();
         ctx.getRuntimeContext().getBundle().getBundleContext().addFrameworkListener(
                 this);
         log.debug("Theme service activated");
@@ -94,6 +96,7 @@ public class ThemeService extends DefaultComponent implements FrameworkListener 
     @Override
     public void deactivate(ComponentContext ctx) {
         registries = null;
+        Manager.resetProtocols();
         ctx.getRuntimeContext().getBundle().getBundleContext().removeFrameworkListener(
                 this);
         log.debug("Theme service deactivated");

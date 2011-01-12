@@ -14,12 +14,9 @@
 
 package org.nuxeo.theme;
 
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.net.URLStreamHandler;
 import java.net.URLStreamHandlerFactory;
 import java.util.Map;
-import java.util.Properties;
 
 import org.nuxeo.common.utils.URLStreamHandlerFactoryInstaller;
 import org.nuxeo.runtime.api.Framework;
@@ -34,12 +31,6 @@ import org.nuxeo.theme.uids.UidManager;
 import org.nuxeo.theme.vocabularies.VocabularyManager;
 
 public final class Manager {
-
-    private static final String PROTOCOL_HANDLER_PKG = "org.nuxeo.theme.protocol";
-
-    static {
-        initializeProtocols();
-    }
 
     private Manager() {
     }
@@ -85,18 +76,9 @@ public final class Manager {
         return (VocabularyManager) getRegistry("vocabularies");
     }
 
-    @SuppressWarnings( { "ResultOfObjectAllocationIgnored" })
-    public static void initializeProtocols() {
-        Properties properties = System.getProperties();
-        String handlers = System.getProperty("java.protocol.handler.pkgs");
-        if (handlers == null) {
-            properties.put("java.protocol.handler.pkgs", PROTOCOL_HANDLER_PKG);
-        } else if (!handlers.matches(PROTOCOL_HANDLER_PKG)) {
-            properties.put("java.protocol.handler.pkgs", PROTOCOL_HANDLER_PKG
-                    + "|" + handlers);
-        }
-        System.setProperties(properties);
+    private static URLStreamHandlerFactory shf;
 
+    public static void initializeProtocols() {
         /*
          * Register the 'nxtheme' URL protocol handler programmatically to get
          * around m2/surefire classloading bug.
@@ -106,16 +88,9 @@ public final class Manager {
          * TODO: remove with Maven surefire 2.4
          */
 
-        boolean protocolInitialized = true;
-        try {
-            new URL("nxtheme://test");
-        } catch (MalformedURLException e) {
-            protocolInitialized = false;
-        }
-
-        if (!protocolInitialized) {
+        if (shf == null) {
             try {
-                URLStreamHandlerFactoryInstaller.installURLStreamHandlerFactory(new URLStreamHandlerFactory() {
+                URLStreamHandlerFactoryInstaller.installURLStreamHandlerFactory(shf = new URLStreamHandlerFactory() {
                     public URLStreamHandler createURLStreamHandler(
                             String protocol) {
                         if ("nxtheme".equals(protocol)) {
@@ -127,6 +102,11 @@ public final class Manager {
             } catch (Throwable e) {
             }
         }
+
     }
 
+    public static void resetProtocols() {
+        URLStreamHandlerFactoryInstaller.uninstallURLStreamHandlerFactory(shf);
+        shf = null;
+    }
 }
