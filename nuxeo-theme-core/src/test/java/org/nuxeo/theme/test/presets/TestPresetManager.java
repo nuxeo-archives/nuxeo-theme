@@ -16,6 +16,7 @@ package org.nuxeo.theme.test.presets;
 
 import java.util.List;
 
+import org.nuxeo.common.utils.FileUtils;
 import org.nuxeo.runtime.test.NXRuntimeTestCase;
 import org.nuxeo.theme.Manager;
 import org.nuxeo.theme.elements.ThemeElement;
@@ -112,6 +113,24 @@ public class TestPresetManager extends NXRuntimeTestCase {
                 "1px solid \"orange\""));
         assertEquals("#fc0", PresetManager.resolvePresets("theme1",
                 "\"orange\""));
+    }
+
+    public void testResolverSpeed() throws Exception {
+        String pass1 = FileUtils.read(this.getClass().getClassLoader().getResourceAsStream("pass1.css"));
+        String pass2 = FileUtils.read(this.getClass().getClassLoader().getResourceAsStream("pass2.css"));
+        String pass2WithMath = FileUtils.read(this.getClass().getClassLoader().getResourceAsStream("pass2withMatch.css"));
+
+        long t0 = System.currentTimeMillis();
+        PresetManager.resolvePresets("admin",pass1);
+        long t1 = System.currentTimeMillis();
+        System.out.println("pass 1 => " + (t1-t0));
+        PresetManager.resolvePresets("admin",pass2);
+        long t2 = System.currentTimeMillis();
+        System.out.println("pass 2 => " + (t2-t1));
+        PresetManager.resolvePresets("admin",pass2WithMath);
+        long t3 = System.currentTimeMillis();
+        System.out.println("pass 2 with match => " + (t3-t2));
+
     }
 
 }

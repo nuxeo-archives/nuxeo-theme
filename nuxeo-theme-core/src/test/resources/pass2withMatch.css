@@ -1,0 +1,376 @@
+.nxStyle617380302 h1, .nxStyle617380302 h2, .nxStyle617380302 h3, .nxStyle617380302 h4 {margin:0;padding:0;}
+.nxStyle617380302 input {display:none;}
+.nxStyle617380302 .dataOutput .iconColumn img, .nxStyle617380302 .dataInput .iconColumn img, .nxStyle617380302 .dataList .iconColumn img {display:block;}
+.nxStyle617380302 .fieldColumn {padding-left:5px;}
+.nxStyle617380302 .dataOutput th, .nxStyle617380302 .dataList th {background-color:#e0e0e0;color:#666666;padding:4px 5px;text-align:left;}
+.nxStyle617380302 div {background-color:#ffffff;float:none;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;}
+.nxStyle617380302 a:link, .nxStyle617380302 a:visited {background:transparent;color:#333333;text-decoration:none;}
+.nxStyle617380302 .dataInput, .nxStyle617380302 .dataOutput, .nxStyle617380302 .dataOutput2Columns, .nxStyle617380302 .dataList {border:1px solid #dbdbdb;border-collapse:collapse;}
+.nxStyle617380302 ul {display:none;}
+.nxStyle617380302 .dataOutput td, .nxStyle617380302 .dataList td {border-bottom:1px solid #c7c7c7;border-top:1px solid #c7c7c7;padding:5px 3px;}
+.nxStyle617380302 .dataOutput2Columns td {padding:5px 3px;vertical-align:top;}
+.nxStyle617380302 img {display:none;}
+.nxStyle617380302 .breadcrumbs {float:left;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;margin-bottom:10px;}
+.nxStyle617380302 .syndicationLinks {display:none;}
+.nxStyle105673451 {background:#eeeff0;border-bottom:1px solid #e3e5e7;padding:3px 7px;}
+.nxStyle105673451 div {font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;line-height:1.25em;margin:0;padding:0;}
+.nxStyle105673451 a {color:#666666;text-decoration:none;}
+.nxStyle105673451 a:visited {color:#666666;}
+.nxStyle105673451 a:active {color:#666666;}
+.nxStyle105673451 a:hover {color:#666666;text-decoration:underline;}
+.nxStyle105673451 .breadcrumbs a, .nxStyle105673451 .breadcrumbs a:link, .nxStyle105673451 .breadcrumbs a:visited {font-weight:normal;text-decoration:none;}
+.nxStyle105673451 .breadcrumbs a:hover, .nxStyle105673451 .breadcrumbs a:active {font-weight:normal;text-decoration:underline;}
+.nxStyle105673451 .printButton {float:right;padding-right:1px;}
+.nxStyle105673451 .printButton div a img {height:16px;margin-left:5px;width:16px;}
+.nxStyle105673451 .printButton .liveEditCreateButtons {border-right:1px solid #c7c7c7;margin-right:5px;padding-right:8px;}
+.nxStyle105673451 .breadcrumbs {float:left;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;padding:5px 4px 0px 0px;}
+.nxStyle105673451 .printButton form, .nxStyle105673451 .breadcrumbs form {margin:0;padding:0;}
+.nxStyle61144662 input.button {background:#cecfd1 url(/nuxeo/img/theme_galaxy/buttons.png) top left repeat-x;border:1px solid #bfc5cb;color:#333333;cursor:pointer;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;margin:5px 10px 10px 0px;padding:2px 5px 2px 5px;}
+.nxStyle61144662 input.button:hover {border:1px solid #a3a3a3;color:#000000;}
+.nxStyle61144662 input.button[disabled=disabled], .nxStyle61144662 input.button[disabled=disabled]:hover {border:1px solid #bfc5cb;color:#92999e;cursor:default;}
+.nxStyle1693091376 a, .nxStyle1693091376 a:link, .nxStyle1693091376 a:visited {text-decoration:none;}
+.nxStyle1693091376 a:hover, .nxStyle1693091376 a:active {text-decoration:underline;}
+.nxStyle1693091376 a, .nxStyle1693091376 a:link, .nxStyle1693091376 a:visited, .nxStyle1693091376 a:hover, .nxStyle1693091376 a:active {color:#ffffff;}
+.nxStyle1693091376 img {margin-left:5px;margin-right:2px;vertical-align:middle;}
+.nxStyle1693091376 form {margin:0;padding:0;}
+.nxStyle1693091376 .userActions {color:#cecece;float:left;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;line-height:185%;margin:0 0 0 15px;padding:5px 0 0 0;text-align:left;}
+.nxStyle1693091376 .searchService {font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;padding-top:4px;}
+.nxStyle1693091376 .searchService input.button {margin:3px 5px 0 3px;padding:2px;}
+.nxStyle1693091376 .userServicesBlock {float:left;padding-top:10px;}
+.nxStyle1693091376 .userSearchBlock {float:right;}
+.nxStyle1693091376 .userMenuActions {color:#cecece;float:left;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;line-height:185%;margin:0 0 0 15px;padding:0px;text-align:left;}
+.nxStyle1693091376 .userMenuActions ul, .nxStyle1693091376 .userMenuActions ul ul {list-style:none;}
+.nxStyle1693091376 .userMenuActions ul {height:28px;margin:0;padding:0;}
+.nxStyle1693091376 .userMenuActions ul li {float:left;text-align:left;}
+.nxStyle1693091376 .userMenuActions ul li a:hover, .nxStyle1693091376 .userMenuActions ul li:hover {background-color:#ffffff;color:#000000;}
+.nxStyle1693091376 .userMenuActions a {background-color:#ffffff;color:#7693a3;display:block;margin:0;text-decoration:none;}
+.nxStyle1693091376 .userMenuActions a.userButton {background:url(/nuxeo/icons/user.png) no-repeat scroll 3px center transparent;padding:3px 8px 5px 23px;}
+.nxStyle1693091376 .userMenuActions li ul {border:1px solid #e0e0e0;border-top:none;display:none;height:auto;position:absolute;width:180px;z-index:1000;box-shadow:3px 3px 5px rgba(0, 0, 0, 0.5);}
+.nxStyle1693091376 .userMenuActions li:hover ul {display:block;}
+.nxStyle1693091376 .userMenuActions li ul a {padding:4px 4px 4px 22px;}
+.nxStyle1693091376 .userMenuActions ul li li {width:180px;}
+.nxStyle1693091376 .userMenuActions ul ul a:hover {background-color:#ccf1ff;}
+.nxStyle1693091376 .userMenuActions input.button {margin:0 5px;}
+.nxStyle1693091376 .mainTabs {float:left;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;height:28px;line-height:normal;}
+.nxStyle1693091376 .mainTabs ul {margin:0;padding:0;}
+.nxStyle1693091376 .mainTabs li {background-color:#207594;display:inline;float:left;height:28px;margin:0 5px;}
+.nxStyle1693091376 .mainTabs a, .nxStyle1693091376 .mainTabs a:visited {color:#d7e3f1;display:inline-block;font-size:12px;padding:5px 11px 8px;text-decoration:none;}
+.nxStyle1693091376 .mainTabs a:hover {color:#ffffff;}
+.nxStyle1693091376 .mainTabs li.selected {background-color:#ffffff;}
+.nxStyle1693091376 .mainTabs li.selected a, .nxStyle1693091376 .mainTabs li.selected a:hover, .nxStyle1693091376 .mainTabs li.selected a:visited {color:#000000;font-weight:bold;text-decoration:none;}
+.nxStyle1693091376 .mainTabs li a:hover {text-decoration:none;}
+.nxStyle1693091376 .searchService input.directoryFilter {font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;padding:1px 0;}
+.nxStyle1693091376 .footerDefaultLinks {background:#2d313e;border-top:1px solid #292929;padding:15px;}
+.nxStyle1693091376 .footerBlock {font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;line-height:1.25em;margin:0;padding:0;}
+.nxStyle1693091376 .footerBlock div {font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;line-height:1.25em;margin:0;padding:0;}
+.nxStyle1693091376 .footerBlock form, .nxStyle1693091376 .footerBlock p {margin:5px 0px 0px 0px;padding:0;}
+.nxStyle1693091376 .nuxLinks {float:right;padding-left:20px;}
+.nxStyle1693091376 .nuxLinks a {vertical-align:middle;}
+.nxStyle1693091376 .copyrights {color:#9a9a9a;float:right;padding:2px 20px 0 0;}
+.nxStyle1693091376 a.twitt {background:transparent url(/nuxeo/icons/icones-metanav.png) no-repeat left top;display:inline-block;height:16px;margin:0px 5px;width:16px;}
+.nxStyle1693091376 a.twitt:hover {background-position:left bottom;}
+.nxStyle1693091376 a.linkedin {background:transparent url(/nuxeo/icons/icones-metanav.png) no-repeat -16px top;display:inline-block;height:16px;margin:0px 5px;width:16px;}
+.nxStyle1693091376 a.linkedin:hover {background-position:-16px bottom;}
+.nxStyle1693091376 .clear {clear:both;}
+.nxStyle1358495114 .tabsBar {float:left;line-height:normal;margin-top:5px;width:100%;}
+.nxStyle1358495114 .tabsBar ul {border-bottom:1px solid #a7a7a7;height:24px;list-style:none;margin:0;padding:0px 10px 0 0;}
+.nxStyle1358495114 .tabsBar li {float:left;margin:0 2px 0 4px;padding:0;}
+.nxStyle1358495114 .tabsBar a, .nxStyle1358495114 .tabsBar a:visited {background:#f6f6f6;border:1px solid #f6f6f6;color:#7a7a7a;display:block;float:left;font-weight:normal;height:16px;padding:3px 7px;text-decoration:none;}
+.nxStyle1358495114 .tabsBar a:hover {background:#ffffff;border:1px solid #f6f6f6;color:#000;text-decoration:none;}
+.nxStyle1358495114 .tabsBar li.selected a, .nxStyle1358495114 .tabsBar li.selected a:hover, .nxStyle1358495114 .tabsBar li.selected a:visited {background:#ffffff;border:1px solid #a7a7a7;border-bottom:1px solid white;color:#000;padding:3px 7px 4px;}
+.nxStyle1358495114 .subtabsBar ul {border-bottom:1px solid #ddd;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;}
+.nxStyle1358495114 .subtabsBar a, .nxStyle1358495114 .subtabsBar a:hover, .nxStyle1358495114 .subtabsBar a:visited {border:1px solid #f6f6f6;color:#7a7a7a;}
+.nxStyle1358495114 .subtabsBar li a:hover {color:#333333;}
+.nxStyle1358495114 .subtabsBar li.selected a, .nxStyle1358495114 .subtabsBar li.selected a:hover, .nxStyle1358495114 .subtabsBar li.selected a:visited {border:1px solid #ddd;border-bottom:1px solid #ffffff;color:#333333;}
+.nxStyle2056481282 h1, .nxStyle2056481282 h2, .nxStyle2056481282 h3, .nxStyle2056481282 h4, .nxStyle2056481282 h5, .nxStyle2056481282 h6, .nxStyle2056481282 form, .nxStyle2056481282 p {margin:0;padding:0;}
+.nxStyle2056481282 input {margin:0;}
+.nxStyle2056481282 .pageNavigationControls span {color:#666666;font-size:13px;font-weight:bold;margin:10px 5px;vertical-align:top;}
+.nxStyle2056481282 .directoryBack {background:transparent url(/nuxeo/icons/arrow_left.gif) 3px 1px no-repeat;padding:2px 2px 2px 20px;}
+.nxStyle2056481282 .errorMessage {background:#ffcc33 url(/nuxeo/icons/warning.gif) 4px 5px no-repeat;border:1px solid #666;color:#333333;display:block;list-style:none;margin:2px 0 2px 0;padding:3px 3px 3px 23px;width:480px;}
+.nxStyle2056481282 .taskActions {width:470px;}
+.nxStyle2056481282 .infoMessage {background:#f2f7fc url(/nuxeo/icons/tip.gif) 2px 3px no-repeat;border:1px solid #0066cc;color:#333333;display:block;margin-bottom:5px;padding:5px 5px 5px 23px;}
+.nxStyle2056481282 .tooltip {background:#f2f7fc url(/nuxeo/icons/lightbulb.png) 2px 3px no-repeat scroll;border:1px solid #0066cc;color:#333333;display:none;margin-bottom:5px !important;max-width:20%;padding:5px 5px 5px 23px !important;z-index:1000;}
+.nxStyle2056481282 .rightsAddManager td {background-color:#ffffff;border:1px solid #ddd;margin:0 10px 0 10px;padding:10px;}
+.nxStyle2056481282 .massEditForm foldableBox {margin-right:15px;}
+.nxStyle2056481282 .wizardFrame {border:2px solid #3399ff;padding:0 5px !important;width:800px;}
+.nxStyle2056481282 .error {color:#f56200;font-weight:bold;}
+.nxStyle2056481282 .archiveTabContent {margin-left:18px;}
+.nxStyle2056481282 .iconColumn {text-align:center;width:20px;}
+.nxStyle2056481282 .iconColumn .dropInto {background-color:#ddeeff;}
+.nxStyle2056481282 .wizardFrame .wizardFinish h4 img {float:left;margin-right:10px;}
+.nxStyle2056481282 .dataInputGroup {margin:0;padding:0;vertical-align:top;}
+.nxStyle2056481282 .relationActionsColumn {text-align:center;vertical-align:top;width:60px;}
+.nxStyle2056481282 table.dataOutput thead th a, .nxStyle2056481282 table.dataOutput thead th a:hover, .nxStyle2056481282 table.dataOutput thead th a:active, .nxStyle2056481282 table.dataOutput thead th a:visited {color:#666666;}
+.nxStyle2056481282 .boldColumn {font-weight:bold !important;}
+.nxStyle2056481282 .facesStatusMessage ul, .nxStyle2056481282 .infoFeedback ul, .nxStyle2056481282 .warningFeedback ul, .nxStyle2056481282 .errorFeedback ul {list-style-type:none;padding:10px;width:200px;}
+.nxStyle2056481282 .vocabularyEntryContent .notEditable {background-color:#ffffff;color:#333333;}
+.nxStyle2056481282 .warningMessage {background:#ffcc33 url(/nuxeo/icons/warning.gif) 4px 5px no-repeat;border:1px solid #666;color:#333333;display:block;list-style:none;margin:2px 0 2px 0;margin-bottom:12px;padding:5px 5px 5px 23px;width:500px;}
+.nxStyle2056481282 .vocabularyEntryContent .dataInput {border:none;margin-bottom:15px;}
+.nxStyle2056481282 .buttonColumn {text-align:center;width:280px;}
+.nxStyle2056481282 .radioColumn {padding:0 0 0 5px;vertical-align:top;width:8px;}
+.nxStyle2056481282 .focusColumn {background-color:#ddeeff;}
+.nxStyle2056481282 a:visited {color:#112b8c;}
+.nxStyle2056481282 .dataInput textarea, .nxStyle2056481282 .dataInput .dataInputText {width:500px;}
+.nxStyle2056481282 .selectDocumentType td {padding:3px;}
+.nxStyle2056481282 .vocabularyEntryContent {margin-left:18px;}
+.nxStyle2056481282 .dataOutput, .nxStyle2056481282 .dataOutput2Columns, .nxStyle2056481282 .dataList {width:100%;}
+.nxStyle2056481282 .wizardFrame .templatePreview {border:2px solid #3399ff;padding:10px !important;}
+.nxStyle2056481282 .dataList td {border-bottom:1px solid #c7c7c7;border-top:1px solid #c7c7c7;padding:5px 3px;}
+.nxStyle2056481282 .dataOutput td table td {border:0px none transparent;}
+.nxStyle2056481282 .currentItemDescription {color:#333333;display:block;font-size:13px;}
+.nxStyle2056481282 .dataInput {margin-top:5px;}
+.nxStyle2056481282 div {font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;line-height:1.25em;margin:0;padding:0;}
+.nxStyle2056481282 .contentViewTitle {float:left;line-height:normal;margin:10px 10px 10px 0;}
+.nxStyle2056481282 .listingLayoutSelector {float:right;margin:11px 0 10px 7px;text-align:right;}
+.nxStyle2056481282 .listingLayoutSelector .contentViewPageSelectorDesc {float:left;padding:2px 3px 0 0;}
+.nxStyle2056481282 .listingLayoutSelector .langSelect {float:left;margin:0px 0 10px;}
+.nxStyle2056481282 .calendarTrigger {cursor:pointer;margin:0 0 5px;vertical-align:bottom;}
+.nxStyle2056481282 .dr-tree-h-ic-div {margin-left:8px;padding-left:10px;}
+.nxStyle2056481282 .treeNodeHighlightedClass {text-decoration:none;}
+.nxStyle2056481282 .treeNodeSelectedClass {border:none;}
+.nxStyle2056481282 .rich-fileupload-list-decor {margin:10px 0px;}
+.nxStyle2056481282 .rich-fileupload-button, .nxStyle2056481282 .rich-fileupload-button-border {padding:2px;}
+.nxStyle2056481282 .rich-fileupload-button-light, .nxStyle2056481282 .rich-fileupload-button-press {padding:1px;}
+.nxStyle2056481282 .rich-fileupload-button-content {padding:2px 6px 2px 19px;}
+.nxStyle2056481282 .rightsAddSelect {border:1px solid #666;margin-top:0px;}
+.nxStyle2056481282 .dataList thead th {background:#f1f2f3;border-bottom:1px solid #c7c7c7;color:#666666;padding:5px 3px;text-align:left;}
+.nxStyle2056481282 .dataList thead th a, .nxStyle2056481282 .dataList thead th a:link {color:#666666;text-decoration:none;}
+.nxStyle2056481282 .dataList thead th a:visited {color:#666666;}
+.nxStyle2056481282 .dataList thead th a:active {color:#666666;}
+.nxStyle2056481282 .dataList thead th a:hover {color:#666666;text-decoration:underline;}
+.nxStyle2056481282 .relationPredicateColumn {vertical-align:top;width:100px;}
+.nxStyle2056481282 .selectDocumentType {margin-top:10px;}
+.nxStyle2056481282 .archiveTabContent .notEditable {background-color:#ffffff;border:none;color:#333333;}
+.nxStyle2056481282 .twoColumns {width:50%;}
+.nxStyle2056481282 .dataInput .button {margin:0 10px 0 0;}
+.nxStyle2056481282 .wizardFrame .templatePreview .templatePreviewDescription {font-style:italic;}
+.nxStyle2056481282 .pageNavigationControls {border:1px solid #3399ff;margin:5px 0px;padding:7px;text-align:center;}
+.nxStyle2056481282 .dataList {background:white;border-collapse:collapse;margin:0;}
+.nxStyle2056481282 .dataInput .fieldColumn table.mceEditor .mceToolbarBottom {background-color:#ddeeff;}
+.nxStyle2056481282 .wizardFrame .wizardButtonBar {text-align:right;}
+.nxStyle2056481282 .buttonsGadgetNoForm .button {margin-right:10px;}
+.nxStyle2056481282 .iconColumn .cell {background:none;width:40px;}
+.nxStyle2056481282 a, .nxStyle2056481282 a:link {color:#0066cc;text-decoration:none;}
+.nxStyle2056481282 a:active {color:#0066cc;}
+.nxStyle2056481282 a:hover {color:#112b8c;text-decoration:underline;}
+.nxStyle2056481282 table {margin:0;}
+.nxStyle2056481282 .pictureBookItem {background-color:#ddeeff;border:1px solid #3399ff;float:left;height:160px;margin:10px 20px 10px 0px;text-align:center;width:140px;}
+.nxStyle2056481282 .itemSelected {background-color:#ffcc66;border:1px solid #ff9933;}
+.nxStyle2056481282 .pictureBookItem .cell {height:110px;padding-top:15px;text-align:center;}
+.nxStyle2056481282 .pictureBookItem .cell a {display:block;height:100px;padding:20px;width:100px;}
+.nxStyle2056481282 .pictureBookItemTitle {background-color:#2a90f6;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;padding:5px 0;}
+.nxStyle2056481282 .pictureBookItemTitle a, .nxStyle2056481282 .pictureBookItemTitle a:hover, .nxStyle2056481282 .pictureBookItemTitle a:visited {color:#0066cc;}
+.nxStyle2056481282 .slideshowContent {padding:10px 0px 5px 0px;}
+.nxStyle2056481282 .slideshowContent h3 {padding:8px 0px 5px 70px;}
+.nxStyle2056481282 .slideShowControl {margin:0px 0px 10px;}
+.nxStyle2056481282 .slideShowControl input {margin:0px 3px;padding:0px;}
+.nxStyle2056481282 .slideShowControl input.button[disabled=disabled] {background:#ebeff4 url(/nuxeo/img/button_disabled.gif) 0 0 repeat-x;border-color:#ccc #999 #999 #ccc;cursor:default;}
+.nxStyle2056481282 .slideShowControl .indexPicture {margin:0px 3px 4px 0px;}
+.nxStyle2056481282 .slideShowControl span {color:#666666;font-size:13px;font-weight:bold;padding-right:10px;}
+.nxStyle2056481282 .rightsAdd {margin:10px 0 10px 0;}
+.nxStyle2056481282 .foldableBox {border-bottom:1px solid #f6f6f6;margin-bottom:20px;}
+.nxStyle2056481282 .foldableBox h3 {background:#ffffff;border:1px solid #a7a7a7;color:#333333;font-size:11px;padding:3px 3px 3px 18px;}
+.nxStyle2056481282 .foldableBox h3.folded {background:#4e9ae1 url(/nuxeo/img/theme_galaxy/arrow_folded.gif) top left no-repeat;height:18px;}
+.nxStyle2056481282 .foldableBox h3.foldedDisabled {background:#d2d2d2 none;border-bottom:1px solid #d2d2d2;color:#555555;height:18px;}
+.nxStyle2056481282 .foldableBox h3 span, .nxStyle2056481282 .foldableBox h3 a:link, .nxStyle2056481282 .foldableBox h3 a:visited, .nxStyle2056481282 .foldableBox h3 a:hover, .nxStyle2056481282 .foldableBox h3 a:visited:hover {color:#333333;float:left;padding-right:10px;}
+.nxStyle2056481282 .foldableBox h3.unfolded {background:#4e9ae1 url(/nuxeo/img/theme_galaxy/arrow_unfolded.gif) top left no-repeat;clear:both;height:18px;}
+.nxStyle2056481282 .foldableBox h3 a {color:#333333;display:block;}
+.nxStyle2056481282 .foldableBox h3 a.warningLink {color:#f56200;}
+.nxStyle2056481282 .foldableBox h3 a.action, .nxStyle2056481282 .foldableBox h3 a.action:visited, .nxStyle2056481282 .foldableBox h3 a.action:hover, .nxStyle2056481282 .foldableBox h3 a.action:visited:hover {background-color:#efefef;border:1px solid #cecece;color:#333333;float:right;font-weight:normal;padding:1px 3px;}
+.nxStyle2056481282 .foldableBox .boxBody {clear:both;padding:10px;}
+.nxStyle2056481282 .foldableLightBox {margin-bottom:20px;}
+.nxStyle2056481282 .foldableLightBox div.folded, .nxStyle2056481282 .foldableLightBox div.unfolded {border-bottom:1px solid #f6f6f6;color:#666666;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;height:18px;padding:3px 3px 3px 18px;}
+.nxStyle2056481282 .foldableLightBox div.folded {background:#ffffff url(/nuxeo/icons/arrow_folded.gif) top left no-repeat;}
+.nxStyle2056481282 .foldableLightBox div.unfolded {background:#ffffff url(/nuxeo/icons/arrow_unfolded.gif) top left no-repeat;}
+.nxStyle2056481282 .foldableLightBox div.folded a, .nxStyle2056481282 .foldableLightBox div.unfolded a {color:#666666;float:left;}
+.nxStyle2056481282 .foldableLightBox .boxBody {border-bottom:1px solid #f6f6f6;border-left:1px solid #f6f6f6;border-right:1px solid #f6f6f6;clear:both;padding:10px;}
+.nxStyle2056481282 .relationCreateFieldColumn, .nxStyle2056481282 .fieldColumn, .nxStyle2056481282 .workflowFieldColumn {vertical-align:top;}
+.nxStyle2056481282 .commentQuote {font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;margin:5px 0 5px 0;}
+.nxStyle2056481282 .warningFeedback {background:#ffcc33 url(/nuxeo/icons/warning.gif) 4px 5px no-repeat;border:2px solid #666;color:#333333;font:bold 11px 'Lucida Grande', Verdana, Arial, sans-serif;padding:7px 7px 7px 24px;}
+.nxStyle2056481282 .vocabularyEntryContent .currentDocumentInformation {}
+.nxStyle2056481282 .rightsAddLabel {font-weight:bold;padding:0 5px 0 0px;}
+.nxStyle2056481282 .archiveTabContent .currentDocumentInformation {background-color:#ddeeff;}
+.nxStyle2056481282 .buttonsGadget {margin:5px 0px 5px 40px;}
+.nxStyle2056481282 .errorFeedback {background:#ffcc33 url(/nuxeo/icons/warning.gif) 4px 5px no-repeat;border:2px solid #666;color:#333333;font:bold 11px 'Lucida Grande', Verdana, Arial, sans-serif;padding:7px 7px 7px 24px;}
+.nxStyle2056481282 .wizardFrame .templatePreview img {border:1px solid #333;float:left;}
+.nxStyle2056481282 .dataInput td {border:0px solid #FFF;padding:7px 4px;}
+.nxStyle2056481282 .dataInput td td, .nxStyle2056481282 .dataInput td td td {padding:3px 4px;}
+.nxStyle2056481282 .dataInput textarea, .nxStyle2056481282 .dataInput .dataInputText, .nxStyle2056481282 .dataInput .dataInputTextNoSize {border:1px solid #666;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;padding:4px;vertical-align:top;}
+.nxStyle2056481282 h4, .nxStyle2056481282 h5, .nxStyle2056481282 h6 {color:#848484;font:bold 12px 'Lucida Grande', Verdana, Arial, sans-serif;margin:10px 0px 5px 0px;}
+.nxStyle2056481282 .relationCommentList {background:transparent;}
+.nxStyle2056481282 .infoFeedback {background:#f2f7fc url(/nuxeo/icons/tip.gif) 2px 3px no-repeat;border:2px solid #0066cc;color:#333333;font:bold 11px 'Lucida Grande', Verdana, Arial, sans-serif;padding:7px 7px 7px 24px;}
+.nxStyle2056481282 .pageNavigationControls input {margin-left:5px;}
+.nxStyle2056481282 .relationCreateLabelColumn {width:100px;}
+.nxStyle2056481282 .commentAuthor {background:transparent url(/nuxeo/icons/comment.gif) no-repeat 4px 4px;color:#666666;font-weight:bold;padding:5px 3px 3px 24px;}
+.nxStyle2056481282 .serverChoice {float:left;margin-top:20px;margin-right:30px;text-align:center;width:200px;}
+.nxStyle2056481282 .dataInput .fieldColumn table.mceEditor {background:#ddeeff;border:1px solid #dbdbdb;}
+.nxStyle2056481282 table.dataOutput thead th {background:#f1f2f3;border-bottom:1px solid #c7c7c7;color:#666666;padding:5px 3px;text-align:left;}
+.nxStyle2056481282 .relationCommentList td {border:0px none;}
+.nxStyle2056481282 .facesStatusMessage {left:48%;position:absolute;top:40%;}
+.nxStyle2056481282 .currentDocumentDescription {padding:4px 0;}
+.nxStyle2056481282 .rightsAddTitle {background:#f2f7fc;border:1px solid #0066cc;padding:5px;text-align:center;}
+.nxStyle2056481282 .dataOutput, .nxStyle2056481282 .dataOutput2Columns {border-collapse:collapse;margin-top:7px;margin-bottom:5px;}
+.nxStyle2056481282 .dataOutput2Columns td {padding:5px 3px;vertical-align:top;}
+.nxStyle2056481282 .selectDocumentType td a img {margin-right:4px;vertical-align:top;}
+.nxStyle2056481282 .commentCreationDate {font-weight:normal;}
+.nxStyle2056481282 table thead th {padding:3px;text-align:left;}
+.nxStyle2056481282 .fieldColumn img {margin:0px 4px;vertical-align:top;}
+.nxStyle2056481282 .relationCreateFieldColumn table, .nxStyle2056481282 .fieldColumn table, .nxStyle2056481282 .workflowFieldColumn table {border:0px none #fff;margin:0 0 0 0;vertical-align:top;}
+.nxStyle2056481282 .archiveTabContent .dataInput {border:none;margin-bottom:15px;}
+.nxStyle2056481282 .closedContent {background:#ffffff;border:1px solid #0066cc;margin:15px 0px 0px 0px;padding:0px 10px 10px 10px;}
+.nxStyle2056481282 .dataOutput td {border-bottom:1px solid #c7c7c7;border-top:1px solid #c7c7c7;padding:5px 3px;}
+.nxStyle2056481282 .relationObjectColumn {vertical-align:top;width:100px;}
+.nxStyle2056481282 .labelColumn {font-weight:bold;vertical-align:top;width:120px;}
+.nxStyle2056481282 .labelColumn span {display:block;padding-right:8px;}
+.nxStyle2056481282 .required {background:transparent url(/nuxeo/icons/required.gif) top right no-repeat;padding:0 10px 0 0;}
+.nxStyle2056481282 .rightsAddManager .labelColumn {width:80px;}
+.nxStyle2056481282 .smallButtonsGadget {margin:0 0 5px 100px;}
+.nxStyle2056481282 .workflowLabelColumn {width:120px;}
+.nxStyle2056481282 h2 {color:#5c5c5c;font:bold 16px 'Lucida Grande', Verdana, Arial, sans-serif;padding:0.5em 1em 0.5em 0;}
+.nxStyle2056481282 .dataInput select {border:1px solid #666;padding:2px 1px 2px 1px;vertical-align:top;}
+.nxStyle2056481282 .dataInput .fieldColumn table.mceEditor .mceEditorIframe {background-color:#ffffff;border:1px solid #333;padding:5px;}
+.nxStyle2056481282 .action_bar {float:left;line-height:normal;margin:10px 10px 10px 0;}
+.nxStyle2056481282 .action_bar_message {float:right;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;margin:0;}
+.nxStyle2056481282 .action_bar_message form {display:inline;text-align:right;}
+.nxStyle2056481282 .action_bar ul {list-style:none;margin:0;padding:0px 10px 0 0;}
+.nxStyle2056481282 .action_bar li {float:left;margin:0;padding:0;}
+.nxStyle2056481282 .action_bar img {display:none;}
+.nxStyle2056481282 .action_bar a {background:#cecfd1 url(/nuxeo/img/theme_galaxy/buttons.png) top left repeat-x;border:1px solid #bfc5cb;color:#333333;cursor:pointer;float:left;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;margin-right:10px;padding:4px 7px;text-decoration:none;}
+.nxStyle2056481282 .action_bar a:hover {border:1px solid #a3a3a3;color:#000000;}
+.nxStyle2056481282 .tabsContent {margin:0px;padding:5px 10px 10px 10px;}
+.nxStyle2056481282 .tabsContent table.trashTable thead th {background-color:#ffd9a3;}
+.nxStyle2056481282 table.trashTable tbody tr.dataRowOdd {background-color:#fffbf2;}
+.nxStyle2056481282 textarea {padding:5px;}
+.nxStyle2056481282 .checkBox {margin-right:3px;}
+.nxStyle2056481282 .rightsAddManager {background:transparent url(/nuxeo/img/rightsadd_bar.gif) no-repeat center;margin:3px 0 0 0;width:100%;}
+.nxStyle2056481282 .userAndGroupSearch {margin:0;}
+.nxStyle2056481282 .userAndGroupFilter {margin:15px 0 0 0;}
+.nxStyle2056481282 .buttonsGadgetNoForm {margin:0px 5px;}
+.nxStyle2056481282 .dataOutput .button {margin:2px 10px 2px 0px !important;}
+.nxStyle2056481282 .commentBlock {margin-top:7px;margin-bottom:8px;padding:2px 10px 2px 0px;}
+.nxStyle2056481282 h1 {color:#5c5c5c;font:bold 21px 'Lucida Grande', Verdana, Arial, sans-serif;overflow:auto;}
+.nxStyle2056481282 .dataRowEven {background:#ffffff;}
+.nxStyle2056481282 .relationCommentColumn {vertical-align:top;}
+.nxStyle2056481282 .taskAssign {background:#f2f7fc;border:1px solid #0066cc;display:block;margin:5px 0px 10px 0px;padding:5px;text-align:center;}
+.nxStyle2056481282 .commentActions {float:right;font-size:10px;margin-right:4px;padding:3px;}
+.nxStyle2056481282 .iconColumn img {background:none;position:relative;z-index:25;}
+.nxStyle2056481282 h3 {color:#5c5c5c;font:bold 14px 'Lucida Grande', Verdana, Arial, sans-serif;margin:0;padding:13px 0px 10px 0px;}
+.nxStyle2056481282 .directoryFilter, .nxStyle2056481282 .searchField {background:#fff url(/nuxeo/icons/search.gif) 2px 2px no-repeat;border:1px solid #666;font-size:11px;margin:0 5px 10px 0;padding:3px 3px 3px 20px;}
+.nxStyle2056481282 .taskPrincipalSelect select {border:1px solid #666;margin:5px 0px 10px 15px;padding:2px 1px 2px 1px;}
+.nxStyle2056481282 .dataRowOdd {background:#ecf6ff;}
+.nxStyle2056481282 table.dataOutput th a img {margin:0 0 0 2px;padding:0;vertical-align:bottom;}
+.nxStyle2056481282 table.dataInput td.fieldColumn label {vertical-align:top;}
+.nxStyle2056481282 h3.summaryTitle {border-bottom:1px solid #a9a9a9;color:#848484;font:bold 14px 'Lucida Grande', Verdana, Arial, sans-serif;margin:0px 0px 10px 0px;padding:17px 0px 3px 0px;}
+.nxStyle2056481282 .dublincore_block table.floatingLeftTable {float:left;margin-right:100px;}
+.nxStyle2056481282 .labelColumnLeftAlign {font-weight:bold;padding-right:30px;}
+.nxStyle2056481282 .boldLabel {font-weight:bold;}
+.nxStyle2056481282 .rank_block, .nxStyle2056481282 .publication_block, .nxStyle2056481282 .attachments {margin-top:15px;}
+.nxStyle2056481282 .content_block table {margin-bottom:10px;width:100%;}
+.nxStyle2056481282 .content_block td {padding:0;vertical-align:top;}
+.nxStyle2056481282 .content_block .labelColumn {width:100px;}
+.nxStyle2056481282 .content_block .actionsColumn {vertical-align:top;width:20%;}
+.nxStyle2056481282 .content_block img {padding:0px 5px;}
+.nxStyle2056481282 .note_content_block {border:1px solid #d7d7d7;margin:0 0 15px;padding:15px;}
+.nxStyle2056481282 .note_content_block span, .nxStyle2056481282 .note_content_block p {font-size:105%;line-height:1.8em;}
+.nxStyle2056481282 .relation_block {}
+.nxStyle2056481282 .lockFile_block, .nxStyle2056481282 .restoreFile_block {padding:0px 0px 10px;}
+.nxStyle2056481282 .summary_locked {color:#f56200;font-weight:bold;}
+.nxStyle2056481282 .summary_unlocked {color:#1caa00;font-weight:bold;}
+.nxStyle2056481282 .lockDetail, .nxStyle2056481282 .DetailList {padding-top:5px;}
+.nxStyle2056481282 .lcAndVersion {border:1px solid #dedede;padding:3px;}
+.nxStyle2056481282 .actions_block {border:1px solid #dedede;margin:10px 0;padding:10px 7px 3px;}
+.nxStyle2056481282 .comments_block .commentBlock {border:none;}
+.nxStyle2056481282 .comments_block .commentQuote {margin:5px 0 5px 24px;}
+.nxStyle2056481282 .metadata_block .dataInput td {padding:3px;}
+.nxStyle2056481282 .layoutViewMode {margin:0px;padding:0px;}
+.nxStyle2056481282 .layoutViewMode li {display:inline;}
+.nxStyle2056481282 .layoutViewMode a img {border:1px solid #ffffff;}
+.nxStyle2056481282 .layoutViewMode a:hover img, .nxStyle2056481282 .layoutViewMode li.selected img {border:1px solid #aaa;}
+.nxStyle2056481282 .summary_div_0 {float:left;padding-top:10px;width:62%;}
+.nxStyle2056481282 .summary_div_1 {float:right;padding:10px 0;width:33%;}
+.nxStyle2056481282 .summary_div_1 h3.summaryTitle {color:#848484;font-size:12px;}
+.nxStyle2056481282 .summary_div_2 {clear:both;}
+.nxStyle2056481282 .bigIcon {width:50px;}
+.nxStyle2056481282 .smallIcon {height:16px;width:16px;}
+.nxStyle2056481282 div.syndicationButton {background:#ff9d5c;float:right;font-size:9px;margin-bottom:5px;}
+.nxStyle2056481282 .syndicationContainer {height:30px;}
+.nxStyle2056481282 div.syndicationButton div.syndicationLinks {color:#ffffff;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;padding:2px 4px;}
+.nxStyle2056481282 div.syndicationButton div.syndicationLinks a {color:#ffffff;text-decoration:none;}
+.nxStyle2056481282 .listShuttleTable .listShuttleSelectionActions a {display:block;}
+.nxStyle2056481282 .genericPopUp {background-color:#ffffff;border:1px solid #b5bcc6;display:none;position:absolute;width:400px;z-index:10000;}
+.nxStyle2056481282 .genericPopUp .closePopUpHeader {background-color:#f6f8ff;border-bottom:1px dotted #dedede;padding:3px;text-align:right;}
+.nxStyle2056481282 .genericPopUp .closePopUpHeader .closePopUp {cursor:pointer;float:right;}
+.nxStyle2056481282 .genericPopUp .closePopUpHeader .popUpTitle {float:left;font-size:110%;}
+.nxStyle2056481282 .genericPopUp .popUpContent {height:390px;overflow:auto;padding:10px;}
+.nxStyle2056481282 .bigPopUp {height:70%;width:80%;}
+.nxStyle2056481282 .dataInput .dr-tree td, .nxStyle2056481282 .dataInput .dr-tree td td {padding:1px;}
+.nxStyle2056481282 .fieldColumn .dr-tree img {margin:0;}
+.nxStyle731396580 div, .nxStyle731396580 dd, .nxStyle731396580 dt, .nxStyle731396580 dl, .nxStyle731396580 img, .nxStyle731396580 p, .nxStyle731396580 h1, .nxStyle731396580 h2, .nxStyle731396580 h3, .nxStyle731396580 h4, .nxStyle731396580 h5, .nxStyle731396580 form, .nxStyle731396580 hr, .nxStyle731396580 fieldset {margin:0;padding:0;}
+.nxStyle731396580 .treeLink a, .nxStyle731396580 .treeLink a:link, .nxStyle731396580 .treeLink a:visited {font-weight:normal;text-decoration:none;}
+.nxStyle731396580 .treeLink a:hover, .nxStyle731396580 .treeLink a:active {font-weight:normal;text-decoration:underline;}
+.nxStyle731396580 .treeLink img {margin-top:3px;margin-left:4px;margin-right:4px;vertical-align:top;}
+.nxStyle731396580 a {color:#0066cc;text-decoration:none;}
+.nxStyle731396580 a:visited {color:#112b8c;}
+.nxStyle731396580 a:active {color:#0066cc;}
+.nxStyle731396580 a:hover {color:#112b8c;text-decoration:underline;}
+.nxStyle731396580 .cell {margin-bottom:2px;padding:2px;}
+.nxStyle731396580 .cell img, .nxStyle731396580 .clipboardFunction img {vertical-align:middle;}
+.nxStyle731396580 .cell .iconImage {margin-right:4px;}
+.nxStyle731396580 .dropInto {background-color:#ddeeff;}
+.nxStyle731396580 .dropIntoClipboardCopy {background:#adf url(/nuxeo/icons/action_clipboard_copy.gif) no-repeat 98% 3%;}
+.nxStyle731396580 #clipboardCopy {padding:3px;}
+.nxStyle731396580 .clipboardFunctions {border-top:2px solid #e7e7e7;padding-top:10px;}
+.nxStyle731396580 .clipboardFunction {padding:2px 2px 2px 2px;}
+.nxStyle731396580 .clipboardRemoveItem {float:right;}
+.nxStyle731396580 .userClipboard h4 {border-bottom:1px dotted #999;color:#848484;font-size:12px;height:16px;margin-top:0px;margin-bottom:2px;padding:8px 2px 2px 2px;}
+.nxStyle731396580 .userClipboardContent {margin:0px;padding:10px 0 10px 3px;}
+.nxStyle731396580 .userClipboard {background-color:#ffffff;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;height:1%;margin:10px 0px 10px 0px;}
+.nxStyle731396580 .userClipboard div {font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;}
+.nxStyle731396580 .clipboardEmptyMessage {color:#666666;font-size:9px;font-style:italic;padding:0 2px 2px 2px;text-align:center;}
+.nxStyle731396580 .smallIcon {height:16px;width:16px;}
+.nxStyle731396580 .menu dl {margin:0px;}
+.nxStyle731396580 .menu dd {margin:0px;padding:10px 0px;}
+.nxStyle731396580 .menuForm, .nxStyle731396580 .menuForm div, .nxStyle731396580 .menu, .nxStyle731396580 .menu div, .nxStyle731396580 .tagCloudBlock, .nxStyle731396580 .tagCloudBlock div {font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;}
+.nxStyle731396580 td.dr-tree-h-text, .nxStyle731396580 td.dr-tree-h-text span, .nxStyle731396580 td.dr-tree-h-text a.treeLink {white-space:normal;}
+.nxStyle731396580 .facetedSearchActionBar {border-bottom:1px solid #cacaca;padding:2px;}
+.nxStyle731396580 .facetedSearchActionBar a {float:left;padding-top:3px;}
+.nxStyle731396580 .facetedSearchActionBar input.button {float:right;font-weight:bold;margin:0 0 0 5px;padding:0 5px 0 7px;width:auto;}
+.nxStyle731396580 #facetedSearchSelectorDiv, .nxStyle731396580 #savedFacetedSearchSelectorDiv {border-bottom:1px solid #f1f1f1;margin:0;padding:0 0 5px;}
+.nxStyle731396580 #facetedSearchSelectorDiv p, .nxStyle731396580 #savedFacetedSearchSelectorDiv p {background-color:#ecf6ff;border-bottom:1px solid #cacaca;border-top:1px solid #ffffff;color:#323232;font:bold 11px 'Lucida Grande', Verdana, Arial, sans-serif;padding:3px;}
+.nxStyle731396580 .facetedSearchBlock .labelColumn {font-weight:normal;width:70px;}
+.nxStyle731396580 .facetedSearchBlock .tinyLabel {display:inline-block;text-align:right;width:24px;}
+.nxStyle731396580 .facetedSearchBlock .dataInput {width:100%;}
+.nxStyle731396580 .facetedSearchBlock .dataInput td {padding:3px 4px 5px 0;}
+.nxStyle731396580 .facetedSearchBlock input, .nxStyle731396580 .facetedSearchBlock select {width:100%;}
+.nxStyle731396580 .facetedSearchBlock input.rich-calendar-input {margin:1px 3px 1px 5px;width:68%;}
+.nxStyle731396580 .facetedSearchBlock .dataInputTextDate {font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;margin:0 5px 3px 3px;width:45px;}
+.nxStyle731396580 .facetedSearchBlock .widgetContent {border-bottom:1px solid #dcdcdc;}
+.nxStyle731396580 .facetedSearchBlock h5 {background-color:#f1f2f3;border-bottom:1px solid #cacaca;border-top:1px solid #ffffff;color:#323232;font:bold 11px 'Lucida Grande', Verdana, Arial, sans-serif;padding:3px;}
+.nxStyle731396580 .facetedSearchBlock .widgetContent .labelOpenPopUp {border-bottom:1px solid #cacaca;color:#323232;display:block;font:normal 11px 'Lucida Grande', Verdana, Arial, sans-serif;font-size:10px;margin:0 0 5px;padding:0 0 1px;}
+.nxStyle731396580 #saveFacetedSearchForm input {margin-left:3px;}
+.nxStyle731396580 .facetedSearchPopUp {background-color:#ffffff;border:1px solid #b5bcc6;display:none;left:25%;position:absolute;top:15%;width:400px;z-index:10000;}
+.nxStyle731396580 .facetedSearchPopUp .closePopUpHeader {background-color:#f6f8ff;border-bottom:1px dotted #dedede;padding:3px;text-align:right;}
+.nxStyle731396580 .facetedSearchPopUp .closePopUpHeader .closePopUp {cursor:pointer;float:right;}
+.nxStyle731396580 .facetedSearchPopUp .closePopUpHeader .popUpTitle {float:left;font-size:110%;}
+.nxStyle731396580 .facetedSearchPopUp .popUpContent {height:390px;overflow:auto;padding:10px;}
+.nxStyle731396580 .facetedSearchBlock .dataInput .facetedSearchPopUp td, .nxStyle731396580 .facetedSearchBlock .thin td {padding:1px;}
+.nxStyle731396580 .facetedSearchBlock .widgetContent .labelOpenPopUp .labelTool {cursor:pointer;float:right;}
+.nxStyle731396580 .facetedSearchBlock table.thin {margin:0 0 7px 0;}
+.nxStyle731396580 .UserSuggestionInput table {width:100%;}
+/* CSS styles for theme 'galaxy' (Tue Jul 12 18:21:46 CEST 2011) */
+
+.nxStyle1233308008PageFrame img {border:0;}
+.nxStyle1895913584SectionFrame {background:#101b3f;border-bottom:3px solid #ffffff;}
+.nxStyle1376826901NuxeoDmLogoGalaxyTheme form {margin:0;padding:0;}
+.nxStyle1376826901NuxeoDmLogoGalaxyTheme img, .nxStyle1376826901NuxeoDmLogoGalaxyTheme a {outline:none;}
+.nxStyle412901507SectionFrame {border-top:1px solid #ffffff;}
+.nxStyle2025024491CellFrame {border-right:1px solid #e3e5e7;}
+.nxStyle203005342CellFrame {background:#fff url(/nuxeo/img/theme_galaxy/galaxy_logo.png) bottom right no-repeat;border-left:1px solid #ffffff;}
+.nxStyle125015832NuxeoFooter {color:#cecece;font:normal 9px 'Lucida Grande', Verdana, Arial, sans-serif;}
+.nxStyle483675743FaceletRegion {padding:7px;}
+.nxStyle1625767564PageFrame img {border:0;}
+.nxStyle50057146CellFrame {background:#fff url(/nuxeo/img/theme_galaxy/galaxy_logo.png) bottom right no-repeat;border-left:1px solid #ffffff;}
+.nxStyle408998980FaceletRegion {padding:7px;}
+
+
+.nxStyleTEST div {background-color:"white (Galaxy backgrounds)";float:none;font:"default (Galaxy fonts)";}
