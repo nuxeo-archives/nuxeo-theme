@@ -129,7 +129,7 @@ public class PresetManager {
         return text;
     }
 
-    private static String resolveVariables(final String themeName,
+    public static String resolveVariables(final String themeName,
             final String str) {
         Matcher m = manyPresetNamePattern.matcher(str);
         StringBuilder sb = new StringBuilder();
